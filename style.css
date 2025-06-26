@@ -1,0 +1,95 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, green, yellow);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.search-bar {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    width: 60%;
+    max-width: 300px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 0.5em;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 3em 1em;
+    background: white;
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    background-color: yellow;
+    color: black;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: gold;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #eee;
+    color: #555;
+}
