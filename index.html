@@ -8,6 +8,105 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <!-- content omitted for brevity -->
+  <header id="home">
+    <div class="logo-section">
+      <h1 class="stroked-text">Tippz Cash Traders</h1>
+      <img src="logo.png" alt="Logo" class="logo-img"/>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <nav>
+      <ul class="nav-row">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Products</a></li>
+        <li><a href="#donations">Donations</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Quality Pre-owned Items at Great Prices.</h2>
+      <p>Discover amazing deals on carefully selected second-hand products.</p>
+      <a href="#item3" class="cta-button">Shop Now</a>
+    </section>
+
+    <section class="featured" id="featured">
+      <h3>Featured Products</h3>
+      <div class="product-grid">
+        <!-- 10 Product Cards -->
+        <script>
+          const conditions = [
+            "Excellent Condition", "Pre-Loved", "Vintage Charm", "Well-Maintained", "Premium Choice",
+            "Trendsetter", "Showroom Quality", "Mint Condition", "Well-Maintained", "Vintage Charm"
+          ];
+          document.write(conditions.map((condition, i) => `
+            <div class="product-card" id="item${i+1}">
+              <img src="product-placeholder.png" alt="Product Image" onclick="enlargeImage(this)" />
+              <h4>iPhone 12 Pro - Unlocked</h4>
+              <p class="price">N$599</p>
+              <span class="condition faded-badge">${condition}</span>
+              <p class="status">In Stock</p>
+              <div class="like-section">
+                <i class="fas fa-heart" onclick="toggleLike(this)"></i> <span class="like-count">0</span>
+              </div>
+              <a href="https://wa.me/264811234567" target="_blank" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> WhatsApp Seller
+              </a>
+            </div>
+          `).join(''));
+        </script>
+      </div>
+    </section>
+
+    <section id="donations" class="donations">
+      <h3>Donations Section</h3>
+      <p>Support our mission by donating usable items. Every contribution makes a difference.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-section about" id="about">
+      <h4>About Tippz Cash Traders</h4>
+      <p>We're dedicated to giving quality items a second chance while helping you save money and reduce waste.</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Products</a></li>
+        <li><a href="#donations">Our Donation Section</a></li>
+        <li>About Us</li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:tippzcashtraders@gmail.com">tippzcashtraders@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+264811234567">(555) 123-4567</a></p>
+    </div>
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <p><a href="https://facebook.com" target="_blank">Facebook</a></p>
+    </div>
+    <hr />
+    <p class="copyright">© 2025 Tippz Cash Traders. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleLike(icon) {
+      const count = icon.nextElementSibling;
+      let number = parseInt(count.textContent);
+      icon.classList.toggle('liked');
+      count.textContent = icon.classList.contains('liked') ? number + 1 : number - 1;
+    }
+
+    function enlargeImage(img) {
+      window.open(img.src, '_blank');
+    }
+  </script>
 </body>
 </html>
