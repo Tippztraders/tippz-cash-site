@@ -100,8 +100,7 @@ header {
 .price {
   font-weight: bold;
   margin-top: 0.5em;
-  text-align: left;
-}
+ }
 
 .faded-badge {
   background: rgba(255, 0, 0, 0.1);
@@ -116,8 +115,7 @@ header {
 .status {
   font-size: 0.9em;
   margin-top: 0.3em;
-  text-align: left;
-}
+  }
 
 .like-section {
   margin-top: 0.5em;
