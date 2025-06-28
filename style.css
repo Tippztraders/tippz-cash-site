@@ -78,6 +78,7 @@ header {
 
 .featured {
   padding: 2em 1em;
+  text-align: center; 
 }
 
 .product-grid {
