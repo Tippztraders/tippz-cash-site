@@ -19,6 +19,8 @@ header {
   max-width: 100px;
   display: block;
   margin: 1em auto;
+  background-color: #f0f0f0; /* light grey to reveal transparent edges */
+  border-radius: 8px; /* optional: smooth corners */
 }
 
 .search-bar {
