@@ -44,12 +44,12 @@ header {
 .nav-row {
   list-style: none;
   padding: 0;
-  margin: 0 auto;        /* center the nav */
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;        /* allow wrapping */
   justify-content: center;
   background: white;
-  max-width: 700px;      /* limit width */
-  overflow-x: auto;      /* allow horizontal scroll on small screens */
+  max-width: 600px;
 }
 
 .nav-row li {
