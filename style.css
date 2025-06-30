@@ -53,7 +53,7 @@ header {
 }
 
 .nav-row li {
-  margin: 2 1.5em;
+  margin: 2 2.5em;
 }
 
 .nav-row li a {
@@ -170,6 +170,38 @@ footer a {
   color: #ccc;
   text-decoration: none;
 }
+
+.donation-gallery {
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.donation-item {
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.donation-item img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.donation-item p {
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #555;
+}
+
 
 footer hr {
   margin-top: 2em;
