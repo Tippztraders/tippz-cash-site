@@ -52,10 +52,9 @@ header {
   max-width: 900px;
 }
 
-.nav-row li {
-  margin: 0 0.5em;
-  flex: 1 1 auto;
-  text-align: center;
+55 .nav-row li {
+56  margin: 2 2.5em;
+57 }
 
 .nav-row li a {
   text-decoration: none;
