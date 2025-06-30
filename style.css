@@ -48,7 +48,7 @@ header {
   display: flex;
   justify-content: center;
   background: white;
-  max-width: 600px;      /* limit width */
+  max-width: 700px;      /* limit width */
   overflow-x: auto;      /* allow horizontal scroll on small screens */
 }
 
