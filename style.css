@@ -49,7 +49,7 @@ header {
   flex-wrap: wrap;        /* allow wrapping */
   justify-content: center;
   background: white;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .nav-row li {
