@@ -52,9 +52,12 @@ header {
   max-width: 900px;
 }
 
-55 .nav-row li {
-56  margin: 2 2.5em;
-57 }
+@media (max-width: 600px) {
+.nav-row li a {
+  font-size: 0.9em;
+  padding: 0.75em;
+  }
+}
 
 .nav-row li a {
   text-decoration: none;
